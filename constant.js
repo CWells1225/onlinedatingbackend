@@ -1,0 +1,15 @@
+module.exports.SERVER_ERROR = "Internal Server Error!";
+module.exports.USER_REGISTERED = "User Registered Successfully!";
+module.exports.PROFILE_UPDATED = "Profile Updated!";
+module.exports.USER_NOT_FOUND = "User not found!";
+module.exports.USER_ALREADY_REGISTERED = "User already registered";
+module.exports.USER_NOT_EXIST = "User dosn't existd";
+module.exports.EMAIL_EXISTS = "Email already exists!";
+module.exports.WRONG_EMAIL_PASSWORD = "Email or password is wrong!";
+module.exports.MATCHES = "Matches List!";
+module.exports.MATCHED = "Matched!";
+module.exports.LOGGED_IN = "Logged In!";
+module.exports.LIKED = "Liked!";
+module.exports.DISLIKED = "Disliked!";
+module.exports.AVTAR_UPLOADED = "Profile Image Updated!";
+module.exports.NOT_IN_MATCH = "User in not in your match list!";
