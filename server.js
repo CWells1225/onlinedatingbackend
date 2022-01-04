@@ -8,6 +8,7 @@ dotenv.config();
 const authRoute = require('./routes/auth');
 const userRoute = require('./routes/user');
 const cors = require('cors'); 
+const PORT = process.env.PORT || 3003; 
 // const session = require('express-session');
 // const MongoDBStore = require('connect-mongodb-session')(session);
 
@@ -62,4 +63,5 @@ app.use('/uploads', express.static('uploads'));
 app.use('/api', authRoute);
 app.use('/api/user', userRoute);
 
-app.listen(3003, () => console.log('Server is up and running...'))
+app.listen(PORT, () => console.log('Server is up and running...'))
+
