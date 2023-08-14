@@ -40,7 +40,7 @@ router.post('/register', async (req, res) => {
         //Create and assign a token
         const token = jwt.sign({ _id: user._id }, process.env.TOKEN_SECRET)
         data.access_token = token;
-        res.json({ error: false, msg: USER_REGISTERED, data });
+    return res.json({ error: false, msg: USER_REGISTERED, data });
     } catch (error) {
         console.log("register", error);
         res.status(500).json({ error: true, msg: SERVER_ERROR })
