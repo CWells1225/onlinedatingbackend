@@ -18,6 +18,7 @@ const ObjectId = mongoose.Types.ObjectId;
 router.post('/register', async (req, res) => {
 
     const body = req.body;
+    console.log(body)
     //Validate Data
     const { error } = registerValidation(body);
     if (error) return res.status(400).json({ error: true, msg: error.details[0].message });
